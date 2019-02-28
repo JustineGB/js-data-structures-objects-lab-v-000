@@ -18,11 +18,6 @@ function deleteFromDriverByKey(driver, key) {
   delete newDriver1[name];
   return newDriver1;
 }
-const doSomething = (obj, prop) => {
-  let res = Object.assign({}, obj)
-  delete res[prop]
-  return res
-}
 
 function destructivelyDeleteFromDriverByKey(driver, key) {
   update = delete driver.name;
